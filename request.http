@@ -1,0 +1,44 @@
+###
+POST http://localhost:5000/api/v1/series/serie HTTP/1.1
+Content-Type: application/json
+
+{
+  "serie":"Serie5",
+  "number_seasons":3,
+  "original_language": "EN",
+  "features_seasons": [{
+    "season_number":1,
+    "season_name": "Corte1",
+    "premier_date": "2020-04-02",
+    "cast": ["Actor1", "Actor2"]
+  }]
+}
+
+###
+GET http://localhost:5000/api/v1/series/serie HTTP/1.1
+
+###
+GET http://localhost:5000/api/v1/series/serie3 HTTP/1.1
+
+
+###
+GET http://localhost:5000/api/v1/series/serie/624d875ef3fc785604b70243 HTTP/1.1
+
+###
+PUT http://localhost:5000/api/v1/series/serie/524d875ef3fc785604b70243 HTTP/1.1
+Content-Type: application/json
+
+{
+  "serie":"Serie2",
+  "number_seasons":3,
+  "original_language": "ES",
+  "features_seasons": [{
+    "season_number":1,
+    "season_name": "Corte1",
+    "premier_date": "2020-04-02",
+    "cast": ["Actor1", "Actor2", "Actor3"]
+  }]
+}
+
+###
+DELETE http://localhost:5000/api/v1/series/serie/624e37f0e831ad1b87636c78 HTTP/1.1
