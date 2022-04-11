@@ -19,7 +19,9 @@
   },
   "dependencies": {
     "@hapi/boom": "^9.1.4",
+    "@sendgrid/mail": "^7.6.2",
     "dotenv": "^16.0.0",
-    "mongoose": "^6.2.9"
+    "mongoose": "^6.2.9",
+    "twilio": "^3.76.1"
   }
 }
