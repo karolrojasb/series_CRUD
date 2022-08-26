@@ -20,6 +20,6 @@
   "dependencies": {
     "@hapi/boom": "^9.1.4",
     "dotenv": "^16.0.0",
-    "mongoose": "^6.2.9"
+    "mongoose": "^6.4.6"
   }
 }
